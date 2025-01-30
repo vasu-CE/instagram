@@ -25,7 +25,7 @@ const Profile = () => {
   const handleFollowUnfollow = async () => {
     try {
       
-      const response = await axios.post(`http://localhost:5000/api/v1/user/followorunfollow/${userProfile?._id}`,
+      const response = await axios.post(`https://instagram-ho1i.onrender.com/api/v1/user/followorunfollow/${userProfile?._id}`,
         {},
         {withCredentials : true}
       );
